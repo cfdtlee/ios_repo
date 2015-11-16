@@ -19,6 +19,8 @@ Your content should be the hero, everything else is secondary
 	
 - Typography is content
 	- Because of the simplification of the user interface and the focus on the content, your typography will occupy from 50% to 90% of the screen.
+	The design should have 3 typographic layers: The heading, the subheading and the body text. For the font, let’s use the clean and utilitarian Avenir Next, which comes with Mac OS X. I’m applying some realistic text. I don’t like to use Lorem Ipsum very much because the content feels very different from the actual text. I like the design to be as close as possible to what’s going to be served when the product is out.
+Using the minimum rule of 22px for text, I’m applying 30px for the body, 40px for the sub-heading and 80px for the heading.
 	
 - Negative space
 	- The less you see, the more you can focus on few things at once. Negative spacing gives breathing room.
@@ -71,6 +73,8 @@ With the increasing number of device resolutions to deal with, it is crucial to 
 
 ## Button and Font Sizes
 The general rule is 44pt for buttons and 12pt for small text, 17pt for body text and 20pt+ for titles.
+
+The back button: circle button of 72px by 72px. Circular buttons are very friendly and approachable.
 
 ## Spacing and Alignment
 A general rule is to have a minimum padding or margin of 8pt.
