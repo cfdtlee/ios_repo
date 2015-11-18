@@ -39,4 +39,9 @@
     denominator = denominator * f.denominator;
 }
 
+-(NSString *) description
+{
+    return [NSString stringWithFormat: @"%i/%i", numerator, denominator];
+}
+
 @end

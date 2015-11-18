@@ -17,5 +17,6 @@
 -(double) convertToNum;
 -(void) setTo: (int) n over: (int) d;
 -(void) add: (Fraction *) f;
+-(NSString *) description;
 
 @end
