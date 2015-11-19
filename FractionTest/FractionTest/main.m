@@ -56,6 +56,9 @@ int main(int argc, const char * argv[]) {
         // fast enumeration, %@ can used at array
         NSLog (@"%@", numbers);
         
+        
+        // Dictionary
+        NSDictionary *glossary
     }
     return 0;
 }
