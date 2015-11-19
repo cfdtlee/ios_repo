@@ -58,7 +58,35 @@ int main(int argc, const char * argv[]) {
         
         
         // Dictionary
-        NSDictionary *glossary
+        NSMutableDictionary *glossary = [NSMutableDictionary dictionary];
+        [glossary setObject: @"A class defined so other classes can iherent from it"
+                     forKey: @"abstract class"];
+        [glossary setObject: @"To implement all the methods defined in a protocol"
+                     forKey: @"adopt"];
+        glossary[@"archiving"] = @"Storing an object for later use"; // another way to use dictionary
+        NSLog(@"abstract class is %@", [glossary objectForKey: @"abstract class"]);
+        NSLog (@"adopt: %@", glossary[@"adopt"]);
+        NSLog (@"archiving: %@", glossary[@"archiving"]);
+        
+        // Enumerating a dictionary
+        NSDictionary *glossary2 =
+        [NSDictionary dictionaryWithObjectsAndKeys:
+         @"A class defined so other classes can inherit from it", @"abstract class",
+         @"To implement all the methods defined in a protocol", @"adopt",
+         @"Storing an object for later use",
+         @"archiving",
+         nil
+         ];
+        // Print all key-value pairs from the dictionary
+        for ( NSString *key in glossary2 )
+            NSLog (@"%@: %@", key, [glossary2 objectForKey: key]);
+        
+        
+        NSDictionary *glossary3 = @{ @"abstract class" :
+                                        @"A class defined so other classes can inherit from it",
+                                     @"adopt" : @"To implement all the methods defined in a protocol",
+                                     @"archiving" : @"Storing an object for later use"
+                                    };
     }
     return 0;
 }
