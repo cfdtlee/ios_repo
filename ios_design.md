@@ -1,3 +1,9 @@
+title: Design Note for iOS
+date: 2015-11-12 11:56:28
+categories: iOS
+tags: [iOS, Design]
+---
+
 # IOS design
 
 ## Core Philosophies
