@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A4D03D1C03AF8B00150723 /* deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A4D03C1C03AF8B00150723 /* deck.m */; };
+		07A4D0411C03B9E900150723 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A4D0401C03B9E900150723 /* PlayingCard.m */; };
+		07A4D0431C04E6B100150723 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A4D0421C04E6B100150723 /* PlayingCardDeck.m */; };
 		07EED7B11C016413004ACD9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EED7B01C016413004ACD9A /* main.m */; };
 		07EED7B41C016413004ACD9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EED7B31C016413004ACD9A /* AppDelegate.m */; };
 		07EED7B71C016413004ACD9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EED7B61C016413004ACD9A /* ViewController.m */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A4D03C1C03AF8B00150723 /* deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deck.m; sourceTree = "<group>"; };
+		07A4D03E1C03AF9500150723 /* deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deck.h; sourceTree = "<group>"; };
+		07A4D03F1C03B9D500150723 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		07A4D0401C03B9E900150723 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		07A4D0421C04E6B100150723 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		07A4D0441C04E6C600150723 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		07EED7AB1C016413004ACD9A /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EED7AF1C016413004ACD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07EED7B01C016413004ACD9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +96,12 @@
 				07EED7B21C016413004ACD9A /* AppDelegate.h */,
 				07EED7D41C01642D004ACD9A /* card.h */,
 				07EED7D51C01643F004ACD9A /* card.m */,
+				07A4D03C1C03AF8B00150723 /* deck.m */,
+				07A4D03F1C03B9D500150723 /* PlayingCard.h */,
+				07A4D0401C03B9E900150723 /* PlayingCard.m */,
+				07A4D0421C04E6B100150723 /* PlayingCardDeck.m */,
+				07A4D0441C04E6C600150723 /* PlayingCardDeck.h */,
+				07A4D03E1C03AF9500150723 /* deck.h */,
 				07EED7B31C016413004ACD9A /* AppDelegate.m */,
 				07EED7B51C016413004ACD9A /* ViewController.h */,
 				07EED7B61C016413004ACD9A /* ViewController.m */,
@@ -224,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A4D0411C03B9E900150723 /* PlayingCard.m in Sources */,
+				07A4D03D1C03AF8B00150723 /* deck.m in Sources */,
 				07EED7B71C016413004ACD9A /* ViewController.m in Sources */,
 				07EED7B41C016413004ACD9A /* AppDelegate.m in Sources */,
+				07A4D0431C04E6B100150723 /* PlayingCardDeck.m in Sources */,
 				07EED7B11C016413004ACD9A /* main.m in Sources */,
 				07EED7D61C01643F004ACD9A /* card.m in Sources */,
 			);
@@ -418,6 +436,7 @@
 				07EED7D01C016413004ACD9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07EED7D11C016413004ACD9A /* Build configuration list for PBXNativeTarget "CardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				07EED7D31C016413004ACD9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
