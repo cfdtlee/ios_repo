@@ -10,13 +10,14 @@
 
 @interface deck()
 @property (strong, nonatomic) NSMutableArray *cards;
+// Declaring a @property makes space in the instance for the￼ pointer itself allocate space in the heap for the, but does not ￼￼￼￼object the pointer points
 @end
 
 @implementation deck
 
 -(NSMutableArray *)cards{
     // if we send message to nil, nothing will happened, no error will happen, just return 0
-    // lazy instantiation
+    // lazy instantiation: initialize until we need to use
     if(!_cards) _cards = [[NSMutableArray alloc] init];
     return _cards;
 }

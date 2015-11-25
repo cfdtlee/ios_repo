@@ -18,8 +18,8 @@
 @synthesize suit = _suit;
 
 
-// a plus method is a class method, send to class, not to instance of an object
-// careat things, like string format; utility method like this, return constance
+// a plus method is a class method, send message to class, not to instance of an object
+// careat things, like string format; utility method like this, return constance(Usually these are either creation methods(like alloc or stringWithFormat: or utility methods.)
 +(NSArray *)validSuits {
     return @[@"♣", @"♦", @"♥", @"♠"];
 }
