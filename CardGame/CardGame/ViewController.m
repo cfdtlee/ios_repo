@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "deck.h"
+#import "PlayingCardDeck.h"
 @interface ViewController ()
 
 
@@ -16,11 +16,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 // IBOutlet is a keyword Xcode puts here (similar to IBAction) to remind Xcode that this is not just a random @property, it's an outlet
 @property (nonatomic) int flipCount;
-@property (nonatomic) deck* realDeck;
+@property (nonatomic) PlayingCardDeck* realDeck;
 @end
 
 @implementation ViewController
-@synthesize realDeck
+@synthesize realDeck;
 -(void) setFlipCount:(int)flipCount{
     _flipCount = flipCount;
     self.flipsLabel.text = [NSString stringWithFormat: @"Flips: %d", self.flipCount];
@@ -29,6 +29,10 @@
 
 // This method’s return type is actually, but Xcode uses the typedef IBAction instead just so that Xcode can keep track that this is not just a void random method that returns void, but rather, it’s an action method. Apart from that, IBAction is exactly the same thing as void.
 - (IBAction)touchCardButton:(UIButton *)sender {
+    if (realDeck == NULL) {
+        self.realDeck = [[PlayingCardDeck alloc] init];
+        NSLog(@"init");
+    }
     if ([sender.currentTitle length]) {
         [sender setBackgroundImage: [UIImage imageNamed: @"cardback"]
                           forState: UIControlStateNormal];
@@ -38,10 +42,9 @@
     else {
         [sender setBackgroundImage: [UIImage imageNamed: @"cardfront"]
                           forState: UIControlStateNormal];
-        [sender setTitle: @"A♣️"
+        [sender setTitle: [realDeck drawRandomCard].contents
                 forState: UIControlStateNormal];
     }
-    NSLog([realDeck drawRandomCard].contents);
     self.flipCount++;
 }
 

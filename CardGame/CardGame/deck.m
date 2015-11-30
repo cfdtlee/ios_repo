@@ -42,6 +42,7 @@
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex: index];
     }
+    else NSLog(@"no cards left");
     return randomCard;
 }
 @end
