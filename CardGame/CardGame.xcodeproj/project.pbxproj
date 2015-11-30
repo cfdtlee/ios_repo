@@ -72,6 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C8D1C51C0BE046004949F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07EED7D41C01642D004ACD9A /* card.h */,
+				07EED7D51C01643F004ACD9A /* card.m */,
+				07A4D03F1C03B9D500150723 /* PlayingCard.h */,
+				07A4D0401C03B9E900150723 /* PlayingCard.m */,
+				07A4D03E1C03AF9500150723 /* deck.h */,
+				07A4D03C1C03AF8B00150723 /* deck.m */,
+				07A4D0441C04E6C600150723 /* PlayingCardDeck.h */,
+				07A4D0421C04E6B100150723 /* PlayingCardDeck.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		07EED7A21C016413004ACD9A = {
 			isa = PBXGroup;
 			children = (
@@ -93,16 +108,7 @@
 		07EED7AD1C016413004ACD9A /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				07EED7B21C016413004ACD9A /* AppDelegate.h */,
-				07EED7D41C01642D004ACD9A /* card.h */,
-				07EED7D51C01643F004ACD9A /* card.m */,
-				07A4D03E1C03AF9500150723 /* deck.h */,
-				07A4D03C1C03AF8B00150723 /* deck.m */,
-				07A4D03F1C03B9D500150723 /* PlayingCard.h */,
-				07A4D0401C03B9E900150723 /* PlayingCard.m */,
-				07A4D0421C04E6B100150723 /* PlayingCardDeck.m */,
-				07A4D0441C04E6C600150723 /* PlayingCardDeck.h */,
-				07EED7B31C016413004ACD9A /* AppDelegate.m */,
+				07C8D1C51C0BE046004949F6 /* Model */,
 				07EED7B51C016413004ACD9A /* ViewController.h */,
 				07EED7B61C016413004ACD9A /* ViewController.m */,
 				07EED7B81C016413004ACD9A /* Main.storyboard */,
@@ -116,6 +122,8 @@
 		07EED7AE1C016413004ACD9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07EED7B21C016413004ACD9A /* AppDelegate.h */,
+				07EED7B31C016413004ACD9A /* AppDelegate.m */,
 				07EED7AF1C016413004ACD9A /* Info.plist */,
 				07EED7B01C016413004ACD9A /* main.m */,
 			);
