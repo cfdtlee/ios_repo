@@ -1,5 +1,5 @@
 //
-//  deck.h
+//  Deck.h
 //  CardGame
 //
 //  Created by Eric on 11/23/15.
@@ -13,8 +13,8 @@
 
 #endif
 #include <Foundation/Foundation.h>
-#include "card.h"
-@interface deck : NSObject
+#include "Card.h"
+@interface Deck : NSObject
 
 -(void) addCard: (Card *) card atTop: (BOOL) atTop;
 -(void) addCard: (Card *) card;

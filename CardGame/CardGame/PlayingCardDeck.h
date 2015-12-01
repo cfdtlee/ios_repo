@@ -12,9 +12,9 @@
 
 #endif
 
-#import "deck.h"
+#import "Deck.h"
 
-@interface PlayingCardDeck : deck
+@interface PlayingCardDeck : Deck
 
 
 @end

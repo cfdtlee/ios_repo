@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90520DA9-5DB6-4308-B481-B3C8EA8028DB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>prog1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A07DAF2A69D9B70E8A29577C2675BFBB9F4C78C</key>
+		<string>github.com:cfdtlee/ios_repo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>prog1/prog1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A07DAF2A69D9B70E8A29577C2675BFBB9F4C78C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:cfdtlee/ios_repo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A07DAF2A69D9B70E8A29577C2675BFBB9F4C78C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A07DAF2A69D9B70E8A29577C2675BFBB9F4C78C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

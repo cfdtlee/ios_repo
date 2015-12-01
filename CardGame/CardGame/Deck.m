@@ -1,19 +1,19 @@
 //
-//  deck.m
+//  Deck.m
 //  CardGame
 //
 //  Created by Eric on 11/23/15.
 //  Copyright (c) 2015 Eric. All rights reserved.
 //
 
-#import "deck.h"
+#import "Deck.h"
 
-@interface deck()
+@interface Deck()
 @property (strong, nonatomic) NSMutableArray *cards;
 // Declaring a @property makes space in the instance for the￼ pointer itself allocate space in the heap for the, but does not ￼￼￼￼object the pointer points
 @end
 
-@implementation deck
+@implementation Deck
 
 -(NSMutableArray *)cards{
     // if we send message to nil, nothing will happened, no error will happen, just return 0

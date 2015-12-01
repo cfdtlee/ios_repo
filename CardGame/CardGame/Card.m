@@ -1,12 +1,12 @@
 //
-//  card.m
+//  Card.m
 //  CardGame
 //
 //  Created by Eric on 11/21/15.
 //  Copyright (c) 2015 Eric. All rights reserved.
 //
 
-#import "card.h"
+#import "Card.h"
 @interface Card() //private decorations
 
 @end
