@@ -21,46 +21,64 @@
                                 <rect key="frame" x="139" y="20" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-53-q4M">
-                                <rect key="frame" x="20" y="518" width="49" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Outline"/>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-aR-lUY">
                                 <rect key="frame" x="40" y="84" width="240" height="335"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-53-q4M">
+                                <rect key="frame" x="20" y="463" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Outline"/>
+                                <connections>
+                                    <action selector="OutlineBodySelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBb-4w-kqC"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-Og-CtS">
-                                <rect key="frame" x="20" y="446" width="64" height="64"/>
+                                <rect key="frame" x="20" y="391" width="64" height="64"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzj-yf-4Ig"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isA-f2-qmf">
-                                <rect key="frame" x="92" y="446" width="64" height="64"/>
+                                <rect key="frame" x="92" y="391" width="64" height="64"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mx-kp-bmU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-17-ei5">
-                                <rect key="frame" x="164" y="446" width="64" height="64"/>
+                                <rect key="frame" x="164" y="391" width="64" height="64"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8rz-qR-F9D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyq-g9-sm3">
-                                <rect key="frame" x="236" y="446" width="64" height="64"/>
+                                <rect key="frame" x="236" y="391" width="64" height="64"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DbA-Zf-hzd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgK-8e-113">
-                                <rect key="frame" x="243" y="518" width="66" height="30"/>
+                                <rect key="frame" x="243" y="463" width="66" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Unoutline"/>
+                                <connections>
+                                    <action selector="UnoutlineBodySelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8Y-VR-N92"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -69,20 +87,24 @@
                     <navigationItem key="navigationItem" title="Attributor" id="d6J-g9-Rre">
                         <barButtonItem key="rightBarButtonItem" title="Stats" id="A3g-LH-BSA">
                             <connections>
-                                <segue destination="0z8-Mc-tVo" kind="push" identifier="Analysis Stats" id="03s-b5-bg4"/>
+                                <segue destination="0z8-Mc-tVo" kind="push" identifier="Analyze Text" id="03s-b5-bg4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="body" destination="P6j-aR-lUY" id="L27-7l-vzJ"/>
+                        <outlet property="outlineButton" destination="aVu-53-q4M" id="u93-9O-bfn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989" y="312"/>
+            <point key="canvasLocation" x="999" y="312"/>
         </scene>
-        <!--View Controller-->
+        <!--Text Stats View Controller-->
         <scene sceneID="rrk-AW-mXY">
             <objects>
-                <viewController id="0z8-Mc-tVo" sceneMemberID="viewController">
+                <viewController id="0z8-Mc-tVo" customClass="TextStatsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qqf-DM-fFV"/>
                         <viewControllerLayoutGuide type="bottom" id="HSW-eb-Lln"/>
@@ -95,14 +117,14 @@
                                 <rect key="frame" x="20" y="112" width="280" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Outlined length: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aA-si-pgt">
                                 <rect key="frame" x="20" y="148" width="280" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -111,10 +133,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="W96-uo-aro"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colofulCharactersLabel" destination="25a-0d-Pwl" id="bzR-rI-oaQ"/>
+                        <outlet property="outlinedCharactersLabel" destination="7aA-si-pgt" id="OYO-9J-3EB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffw-HS-9kt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="312"/>
+            <point key="canvasLocation" x="1412" y="312"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="067-Ms-Wwm">
@@ -135,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhq-Gv-myA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373" y="950"/>
+            <point key="canvasLocation" x="541" y="1010"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yKo-9y-w45">
@@ -149,13 +175,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="snq-MS-ovy" kind="relationship" relationship="viewControllers" id="as1-nU-m6f"/>
                         <segue destination="aUF-ce-tfz" kind="relationship" relationship="viewControllers" id="xjR-Vt-cZS"/>
+                        <segue destination="snq-MS-ovy" kind="relationship" relationship="viewControllers" id="ewv-Fg-SJh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI9-dp-LJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-153" y="578"/>
+            <point key="canvasLocation" x="59" y="566"/>
         </scene>
         <!--Item-->
         <scene sceneID="LFa-RR-B05">
@@ -176,7 +202,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ei-CA-UFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373" y="312"/>
+            <point key="canvasLocation" x="573" y="312"/>
         </scene>
     </scenes>
 </document>
