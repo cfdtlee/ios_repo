@@ -12,14 +12,15 @@
 
 -(int) match:(NSArray *)otherCards {
     int score = 0;
-    if ([otherCards count] == 1) {
+    if ([otherCards count] >= 1) {
         // use introspection to improve, another way is MVC binding communication
-        PlayingCard *otherCard = [otherCards firstObject];
-        if (self.rank == otherCard.rank) {
-            score = 4;
-        }
-        else if ([self.suit isEqualToString:otherCard.suit]){
-            score = 1;
+        for (PlayingCard *otherCard in otherCards) {
+            if (self.rank == otherCard.rank) {
+                score += 4;
+            }
+            else if ([self.suit isEqualToString:otherCard.suit]){
+                score += 1;
+            }
         }
     }
     return score;

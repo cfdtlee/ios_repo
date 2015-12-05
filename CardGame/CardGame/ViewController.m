@@ -28,6 +28,7 @@
 @end
 
 @implementation ViewController
+
 -(CardMatchingGame*) game {
     if (!_game) {
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
@@ -35,6 +36,18 @@
         
     }
     return _game;
+}
+
+- (IBAction)redeal:(UIButton *)sender {
+    [_game redealWithCardCount:[self.cardButtons count]
+                     usingDeck:[self createDeck]];
+    [self updateUI];
+}
+
+- (IBAction)changeMode:(UISegmentedControl *)sender {
+    if(sender.selectedSegmentIndex == 0) {
+        
+    }
 }
 
 //-(Deck *)deck {
@@ -62,6 +75,8 @@
     [self updateUI];
 }
 
+
+
 -(void) updateUI {
     for (UIButton *cardButton in self.cardButtons) {
         NSUInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
@@ -72,7 +87,7 @@
         
         cardButton.enabled = !card.isMatched;
         
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", (int)self.game.score];
     }
 }
 
