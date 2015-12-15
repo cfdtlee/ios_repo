@@ -51,9 +51,12 @@
                                            isAvailableForServiceType:SLServiceTypeTwitter]) {
                                           //tweet out the tweet
                                           SLComposeViewController *twitterVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-                                          [twitterVC setInitialText:[self.tweetTextView.text length] < 140 ?
-                                           self.tweetTextView.text : [self.tweetTextView.text substringToIndex:140]];
-                                          [self showAlertmessage:@"cool, you have tweeted"];
+                                          if ([self.tweetTextView.text length] < 140) {
+                                              [twitterVC setInitialText:self.tweetTextView.text];
+                                          }
+                                          else {
+                                              [twitterVC setInitialText:[self.tweetTextView.text substringToIndex:140]];
+                                          }
                                           [self presentViewController:twitterVC animated:YES completion:nil];
                                       }
                                       else {
