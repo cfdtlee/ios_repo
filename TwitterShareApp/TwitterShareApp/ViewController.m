@@ -30,7 +30,7 @@
 
 - (void)showAlertmessage:(NSString *) myMessage {
     UIAlertController *alertController;
-    alertController = [UIAlertController alertControllerWithTitle:@"twitterShare" message:myMessage preferredStyle:UIAlertControllerStyleAlert];
+    alertController = [UIAlertController alertControllerWithTitle:@"Social Share" message:myMessage preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"okay" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
@@ -41,7 +41,7 @@
         [self.tweetTextView resignFirstResponder];
     }
     
-    UIAlertController *actionController = [UIAlertController alertControllerWithTitle:@"test title" message:@"tweet this text" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *actionController = [UIAlertController alertControllerWithTitle:@"share" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleDefault handler:nil];
 
@@ -65,7 +65,28 @@
                                       }
                                   }];
     
+    UIAlertAction *facebookAction = [UIAlertAction actionWithTitle:@"Post to facebook" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+            SLComposeViewController *facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+            [facebookVC setInitialText:self.tweetTextView.text];
+            [self presentViewController:facebookVC animated:YES completion:nil];
+        }
+        else {
+            [self showAlertmessage:@"please sign in facebook"];
+        }
+    }];
+    
+    // smart controller, if you pass it text, it only show you options that are relevant for text, if you pass picture, it will only show you elements that are pictures
+    UIAlertAction *moreAction = [UIAlertAction actionWithTitle:@"more"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction *action) {
+                                                           UIActivityViewController *moreVC = [[UIActivityViewController alloc]initWithActivityItems:@[self.tweetTextView.text] applicationActivities:nil];
+                                                           [self presentViewController:moreVC animated:YES completion:nil];
+    }];
+    
     [actionController addAction:tweetAction];
+    [actionController addAction:facebookAction];
+    [actionController addAction:moreAction];
     [actionController addAction:cancelAction];
     
     [self presentViewController:actionController animated:YES completion:nil];
