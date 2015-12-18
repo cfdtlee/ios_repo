@@ -15,6 +15,7 @@
 		07B551CE1C224EA4009FF08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B551CC1C224EA4009FF08E /* LaunchScreen.storyboard */; };
 		07B551D91C224EA4009FF08E /* GrammyPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B551D81C224EA4009FF08E /* GrammyPlusTests.m */; };
 		07B551E41C224EA4009FF08E /* GrammyPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B551E31C224EA4009FF08E /* GrammyPlusUITests.m */; };
+		07B551F21C237499009FF08E /* myself.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07B551F11C237499009FF08E /* myself.jpg */; };
 		D7512A39312E8587597A5306 /* libPods-GrammyPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9480AFB14D292D40E39C85 /* libPods-GrammyPlus.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		07B551DF1C224EA4009FF08E /* GrammyPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrammyPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B551E31C224EA4009FF08E /* GrammyPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrammyPlusUITests.m; sourceTree = "<group>"; };
 		07B551E51C224EA4009FF08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B551F11C237499009FF08E /* myself.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myself.jpg; sourceTree = "<group>"; };
 		0D4AFE88C8E60191E171FDB2 /* Pods-GrammyPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		5C9480AFB14D292D40E39C85 /* libPods-GrammyPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrammyPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB510F455D69173074D61AE6 /* Pods-GrammyPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		07B551BE1C224EA4009FF08E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07B551F11C237499009FF08E /* myself.jpg */,
 				07B551BF1C224EA4009FF08E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B551F21C237499009FF08E /* myself.jpg in Resources */,
 				07B551CE1C224EA4009FF08E /* LaunchScreen.storyboard in Resources */,
 				07B551CB1C224EA4009FF08E /* Assets.xcassets in Resources */,
 				07B551C91C224EA4009FF08E /* Main.storyboard in Resources */,

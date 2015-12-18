@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7b-td-MzA">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-Ut-qVk">
+                                <rect key="frame" x="254" y="20" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myself.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r3Z-SQ-7Yj">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-AQ-MF7">
+                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VkL-AQ-MF7" secondAttribute="height" multiplier="23:15" id="a1x-MF-EWF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r3Z-SQ-7Yj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5QW-8p-mju"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r3Z-SQ-7Yj" secondAttribute="trailing" constant="-20" id="EXo-3v-vWf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r3Z-SQ-7Yj" secondAttribute="trailing" constant="-20" id="End-JI-dky"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VkL-AQ-MF7" secondAttribute="bottom" constant="20" id="H59-jT-PVB"/>
+                            <constraint firstItem="r3Z-SQ-7Yj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JRR-6r-wZG"/>
+                            <constraint firstItem="S7b-td-MzA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LPJ-rI-Ofq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r3Z-SQ-7Yj" secondAttribute="trailing" constant="-20" id="QAh-4x-ru9"/>
+                            <constraint firstItem="r3Z-SQ-7Yj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Qpq-mM-8gI"/>
+                            <constraint firstItem="S7b-td-MzA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VZ1-PJ-X5N"/>
+                            <constraint firstItem="Ezp-Ut-qVk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a1T-uK-86m"/>
+                            <constraint firstItem="VkL-AQ-MF7" firstAttribute="top" secondItem="r3Z-SQ-7Yj" secondAttribute="bottom" constant="74" id="jRm-uI-SEj"/>
+                            <constraint firstItem="r3Z-SQ-7Yj" firstAttribute="top" secondItem="Ezp-Ut-qVk" secondAttribute="bottom" constant="74" id="kIw-Fz-qO1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VkL-AQ-MF7" secondAttribute="bottom" constant="20" id="nJD-Sb-nlc"/>
+                            <constraint firstItem="Ezp-Ut-qVk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qHc-UA-c3t"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378.75" y="336.97183098591546"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="myself.jpg" width="960" height="1280"/>
+    </resources>
 </document>
