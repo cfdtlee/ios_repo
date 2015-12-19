@@ -19,27 +19,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7b-td-MzA">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-Ut-qVk">
-                                <rect key="frame" x="254" y="20" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myself.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r3Z-SQ-7Yj">
                                 <rect key="frame" x="0.0" y="124" width="320" height="320"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-AQ-MF7">
-                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <rect key="frame" x="136" y="518" width="49" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VkL-AQ-MF7" secondAttribute="height" multiplier="23:15" id="a1x-MF-EWF"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8b-t7-eB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7b-td-MzA">
+                                <rect key="frame" x="20" y="28" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4J-ft-Nbt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-Ut-qVk">
+                                <rect key="frame" x="249" y="28" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHh-ku-8SD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -62,6 +71,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="r3Z-SQ-7Yj" id="wT8-De-DGR"/>
+                        <outlet property="loginButton" destination="S7b-td-MzA" id="Tgy-Dy-4cw"/>
+                        <outlet property="refreshButton" destination="VkL-AQ-MF7" id="y2W-Eg-dTE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

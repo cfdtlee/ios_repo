@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+@property (weak, nonatomic) IBOutlet UIButton *refreshButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -17,6 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)loginButtonPressed:(UIButton *)sender {
+}
+- (IBAction)logoutButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)refreshButtonPressed:(UIButton *)sender {
 }
 
 - (void)didReceiveMemoryWarning {
