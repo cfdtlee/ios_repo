@@ -23,6 +23,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];
 }
 - (IBAction)logoutButtonPressed:(UIButton *)sender {
 }

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NXOAuth2.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[NXOAuth2AccountStore sharedStore] setClientID:@"f739733a7a254f848dc0ac2185e9b2e1"
+                                             secret:@"2a8e6ab64d8045ab92a236a4602bd0a1"
+                                   authorizationURL:[NSURL URLWithString:@"https://api.instagram.com/oauth/authorize"]
+                                           tokenURL:[NSURL URLWithString:@"https://api.instagram.com/oauth/access_token"]
+                                        redirectURL:[NSURL URLWithString:@"grammyplus://authenticated"]
+                                     forAccountType:@"Instagram"];
     return YES;
+}
+
+- (BOOL) application:(UIApplication *)app handleOpenURL:(nonnull NSURL *)url {
+    NSLog(@"We received a callback");
+    return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:url];
+}
+
+- (BOOL) application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+    NSLog(@"We received a callback");
+    return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NXOAuth2.h"
 
 @interface ViewController : UIViewController
 
