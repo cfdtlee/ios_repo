@@ -55,7 +55,7 @@
                                 <animations/>
                                 <state key="normal" title="delete"/>
                                 <connections>
-                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbO-QY-XRU"/>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yb9-cM-eyP"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kz8-V1-Zko">

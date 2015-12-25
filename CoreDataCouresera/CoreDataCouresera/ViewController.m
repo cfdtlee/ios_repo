@@ -24,23 +24,26 @@
     [super viewDidLoad];
     
     self.appDelegate = [[UIApplication sharedApplication] delegate];
+    
     self.choreRollerHelper = [[PickerViewHelper alloc]init];
     [self.choreRoller setDelegate:self.choreRollerHelper];
     [self.choreRoller setDataSource:self.choreRollerHelper];
+    
     [self updateLogList];
     [self updateChoreRoller];
 }
 
 - (IBAction)choreTapped:(UIButton *)sender {
+    NSLog(@"tap");
     ChoreMO *c = [self.appDelegate createChoreMO];
     c.chore_name = self.choreField.text;
-    [self.appDelegate saveContext];
     [self.appDelegate saveContext];
     [self updateLogList];
     [self updateChoreRoller];
 }
 
 - (IBAction)deleteTapped:(UIButton *)sender {
+    NSLog(@"delete");
     NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
     NSError *error = nil;
@@ -52,8 +55,9 @@
     for (ChoreMO *c in results) {
         [moc deleteObject:c];
     }
+    [self.appDelegate saveContext]; // forget this line
     [self updateLogList];
-    [self updateChoreRoller];
+//    [self updateChoreRoller];
 }
 
 - (void)updateLogList {
@@ -82,7 +86,10 @@
         NSLog(@"Error fetching Person object: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
-    NSMutableArray *choreData = [NSMutableArray arrayWithArray:results];
+    NSMutableArray *choreData = [[NSMutableArray alloc]init];
+    for(ChoreMO *c in results){
+        [choreData addObject:c.chore_name];
+    }
     [self.choreRollerHelper setArray:choreData];
     [self.choreRoller reloadAllComponents];
 }
