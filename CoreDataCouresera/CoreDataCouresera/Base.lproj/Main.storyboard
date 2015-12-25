@@ -50,18 +50,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-IT-bvm">
-                                <rect key="frame" x="112" y="269" width="97" height="30"/>
-                                <animations/>
-                                <state key="normal" title="delete"/>
-                                <connections>
-                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yb9-cM-eyP"/>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kz8-V1-Zko">
                                 <rect key="frame" x="0.0" y="96" width="163" height="139"/>
                                 <animations/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-IT-bvm">
+                                <rect key="frame" x="124" y="269" width="97" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAu-Jd-tSp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

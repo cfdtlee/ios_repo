@@ -42,8 +42,11 @@
     [self updateChoreRoller];
 }
 
+
+
 - (IBAction)deleteTapped:(UIButton *)sender {
-    NSLog(@"delete");
+    NSLog(@"ag");
+    NSLog(@"delete"); //??
     NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
     NSError *error = nil;
@@ -57,7 +60,7 @@
     }
     [self.appDelegate saveContext]; // forget this line
     [self updateLogList];
-//    [self updateChoreRoller];
+    //    [self updateChoreRoller];
 }
 
 - (void)updateLogList {
