@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
+#import "PickerViewHelper.h"
 @interface ViewController ()
 @property (nonatomic) AppDelegate *appDelegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *choreField;
 @property (weak, nonatomic) IBOutlet UILabel *persistedData;
+@property (weak, nonatomic) IBOutlet UIPickerView *choreRoller;
+@property (nonatomic) PickerViewHelper *choreRollerHelper;
 @end
 
 @implementation ViewController
@@ -21,7 +24,11 @@
     [super viewDidLoad];
     
     self.appDelegate = [[UIApplication sharedApplication] delegate];
+    self.choreRollerHelper = [[PickerViewHelper alloc]init];
+    [self.choreRoller setDelegate:self.choreRollerHelper];
+    [self.choreRoller setDataSource:self.choreRollerHelper];
     [self updateLogList];
+    [self updateChoreRoller];
 }
 
 - (IBAction)choreTapped:(UIButton *)sender {
@@ -30,7 +37,9 @@
     [self.appDelegate saveContext];
     [self.appDelegate saveContext];
     [self updateLogList];
+    [self updateChoreRoller];
 }
+
 - (IBAction)deleteTapped:(UIButton *)sender {
     NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
@@ -44,6 +53,7 @@
         [moc deleteObject:c];
     }
     [self updateLogList];
+    [self updateChoreRoller];
 }
 
 - (void)updateLogList {
@@ -61,6 +71,20 @@
         [buffer appendFormat:@"\n%@", c.chore_name, nil];
     }
     self.persistedData.text = buffer;
+}
+
+- (void) updateChoreRoller {
+    NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
+    NSError *error = nil;
+    NSArray *results = [moc executeFetchRequest:request error:&error];
+    if (!results) {
+        NSLog(@"Error fetching Person object: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+    NSMutableArray *choreData = [NSMutableArray arrayWithArray:results];
+    [self.choreRollerHelper setArray:choreData];
+    [self.choreRoller reloadAllComponents];
 }
 
 @end

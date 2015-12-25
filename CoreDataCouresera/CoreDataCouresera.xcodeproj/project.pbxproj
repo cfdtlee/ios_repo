@@ -22,6 +22,7 @@
 		07B552441C29CB6F009FF08E /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B5523C1C29CB6F009FF08E /* PersonMO.m */; };
 		07B552451C29CB6F009FF08E /* ChoreLogMO +CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B5523E1C29CB6F009FF08E /* ChoreLogMO +CoreDataProperties.m */; };
 		07B552461C29CB6F009FF08E /* ChoreLogMO .m in Sources */ = {isa = PBXBuildFile; fileRef = 07B552401C29CB6F009FF08E /* ChoreLogMO .m */; };
+		07CA29D71C2CCC09009D5B72 /* PickerViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA29D61C2CCC09009D5B72 /* PickerViewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		07B5523E1C29CB6F009FF08E /* ChoreLogMO +CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO +CoreDataProperties.m"; sourceTree = "<group>"; };
 		07B5523F1C29CB6F009FF08E /* ChoreLogMO .h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO .h"; sourceTree = "<group>"; };
 		07B552401C29CB6F009FF08E /* ChoreLogMO .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO .m"; sourceTree = "<group>"; };
+		07CA29D51C2CCC09009D5B72 /* PickerViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewHelper.h; sourceTree = "<group>"; };
+		07CA29D61C2CCC09009D5B72 /* PickerViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				07B552051C29C589009FF08E /* ViewController.h */,
 				07B552061C29C589009FF08E /* ViewController.m */,
 				07B552081C29C589009FF08E /* Main.storyboard */,
+				07CA29D51C2CCC09009D5B72 /* PickerViewHelper.h */,
+				07CA29D61C2CCC09009D5B72 /* PickerViewHelper.m */,
 				07B5520E1C29C589009FF08E /* Assets.xcassets */,
 				07B552101C29C589009FF08E /* LaunchScreen.storyboard */,
 				07B552131C29C589009FF08E /* Info.plist */,
@@ -309,6 +314,7 @@
 				07B552071C29C589009FF08E /* ViewController.m in Sources */,
 				07B552451C29CB6F009FF08E /* ChoreLogMO +CoreDataProperties.m in Sources */,
 				07B552421C29CB6F009FF08E /* ChoreMO.m in Sources */,
+				07CA29D71C2CCC09009D5B72 /* PickerViewHelper.m in Sources */,
 				07B552041C29C589009FF08E /* AppDelegate.m in Sources */,
 				07B5520D1C29C589009FF08E /* CoreDataCouresera.xcdatamodeld in Sources */,
 				07B552011C29C589009FF08E /* main.m in Sources */,
@@ -536,6 +542,7 @@
 				07B5522E1C29C589009FF08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07B5522F1C29C589009FF08E /* Build configuration list for PBXNativeTarget "CoreDataCoureseraTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +551,7 @@
 				07B552311C29C589009FF08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07B552321C29C589009FF08E /* Build configuration list for PBXNativeTarget "CoreDataCoureseraUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +560,7 @@
 				07B552341C29C589009FF08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
