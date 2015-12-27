@@ -60,7 +60,7 @@
     }
     [self.appDelegate saveContext]; // forget this line
     [self updateLogList];
-    //    [self updateChoreRoller];
+        [self updateChoreRoller];
 }
 
 - (void)updateLogList {
