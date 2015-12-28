@@ -24,7 +24,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bik-g0-vXd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bik-g0-vXd">
                                 <rect key="frame" x="20" y="58" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="addchore"/>
@@ -39,12 +39,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-zp-7co">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-zp-7co">
                                 <rect key="frame" x="203" y="58" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="personTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6a2-Rh-eAF"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-Se-zFG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-Se-zFG">
                                 <rect key="frame" x="203" y="20" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -63,14 +66,26 @@
                                     <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAu-Jd-tSp"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clf-x6-pQZ">
+                                <rect key="frame" x="157" y="96" width="163" height="139"/>
+                                <animations/>
+                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Kz8-V1-Zko" firstAttribute="width" secondItem="clf-x6-pQZ" secondAttribute="width" id="0np-qG-IDx"/>
+                            <constraint firstItem="p4L-mg-m3H" firstAttribute="centerY" secondItem="bbG-Se-zFG" secondAttribute="centerY" id="5Gq-HA-qhb"/>
                             <constraint firstItem="rwx-fJ-7A4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="FA3-q3-UDn"/>
                             <constraint firstItem="Kz8-V1-Zko" firstAttribute="top" secondItem="p4L-mg-m3H" secondAttribute="bottom" constant="46" id="FvR-uu-PcM"/>
+                            <constraint firstItem="clf-x6-pQZ" firstAttribute="leading" secondItem="Kz8-V1-Zko" secondAttribute="trailing" constant="-6" id="OJS-FQ-Nh7"/>
+                            <constraint firstItem="Kz8-V1-Zko" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PZn-5e-31k"/>
+                            <constraint firstItem="bbG-Se-zFG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SqD-zm-hmZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rwx-fJ-7A4" secondAttribute="bottom" id="cOE-m2-gqd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="clf-x6-pQZ" secondAttribute="trailing" constant="-20" id="i8Y-q1-v59"/>
+                            <constraint firstItem="dba-zp-7co" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ndL-Aw-SCO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rwx-fJ-7A4" secondAttribute="trailing" constant="-20" id="qaA-lu-7vo"/>
+                            <constraint firstItem="Bik-g0-vXd" firstAttribute="centerY" secondItem="dba-zp-7co" secondAttribute="centerY" id="uto-0w-dW1"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -78,6 +93,8 @@
                         <outlet property="choreField" destination="p4L-mg-m3H" id="3Gj-lv-myp"/>
                         <outlet property="choreRoller" destination="Kz8-V1-Zko" id="XPB-IE-YwF"/>
                         <outlet property="persistedData" destination="rwx-fJ-7A4" id="fFR-T3-v8l"/>
+                        <outlet property="personField" destination="bbG-Se-zFG" id="RLb-rj-l8A"/>
+                        <outlet property="personRoller" destination="clf-x6-pQZ" id="Szb-Qu-HCu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
