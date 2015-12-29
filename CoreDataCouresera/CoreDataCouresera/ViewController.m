@@ -67,11 +67,16 @@
     NSInteger choreRow = [self.choreRoller selectedRowInComponent:0];
     NSInteger personRow = [self.personRoller selectedRowInComponent:0];
     
-    ChoreMO *chore = [self.choreRollerHelper getItemFromArray:choreRow];
-    PersonMO *person = [self.personRollerHelper getItemFromArray:personRow];
+    ChoreMO *chore = (ChoreMO *)[self.choreRollerHelper getItemFromArray:choreRow];
+    PersonMO *person = (PersonMO *)[self.personRollerHelper getItemFromArray:personRow];
     
     ChoreLogMO *choreLog = [self.appDelegate createChoreLogMO];
     
+    choreLog.person_who_did = person;
+    choreLog.chore_done = chore;
+    choreLog.when = [self.datePicker date];
+    
+    [self.appDelegate saveContext];
 }
 
 
@@ -97,17 +102,17 @@
 
 - (void)updateLogList {
     NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ChoreLog"];
     NSError *error = nil;
     NSArray *results = [moc executeFetchRequest:request error:&error];
     if (!results) {
-        NSLog(@"Error fetching Person object: %@\n%@", [error localizedDescription], [error userInfo]);
+        NSLog(@"Error fetching ChoreLog object: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
     NSMutableString *buffer = [NSMutableString stringWithString:@""];
     
-    for (ChoreMO *c in results) {
-        [buffer appendFormat:@"\n%@", c.chore_name, nil];
+    for (ChoreLogMO *c in results) {
+        [buffer appendFormat:@"\n%@", c, nil];
     }
     self.persistedData.text = buffer;
 }
