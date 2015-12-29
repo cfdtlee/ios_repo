@@ -57,8 +57,24 @@
                                 <rect key="frame" x="0.0" y="96" width="163" height="139"/>
                                 <animations/>
                             </pickerView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clf-x6-pQZ">
+                                <rect key="frame" x="157" y="96" width="163" height="139"/>
+                                <animations/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="j7V-J6-QUe">
+                                <rect key="frame" x="0.0" y="217" width="320" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="473053530.25192702">
+                                    <!--2015-12-29 03:45:30 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqm-oI-8xw">
+                                <rect key="frame" x="48" y="432" width="57" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add Log"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-IT-bvm">
-                                <rect key="frame" x="124" y="269" width="97" height="30"/>
+                                <rect key="frame" x="190" y="431" width="97" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="delete"/>
@@ -66,10 +82,6 @@
                                     <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAu-Jd-tSp"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clf-x6-pQZ">
-                                <rect key="frame" x="157" y="96" width="163" height="139"/>
-                                <animations/>
-                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -92,6 +104,7 @@
                     <connections>
                         <outlet property="choreField" destination="p4L-mg-m3H" id="3Gj-lv-myp"/>
                         <outlet property="choreRoller" destination="Kz8-V1-Zko" id="XPB-IE-YwF"/>
+                        <outlet property="datePicker" destination="j7V-J6-QUe" id="ybS-QB-gtc"/>
                         <outlet property="persistedData" destination="rwx-fJ-7A4" id="fFR-T3-v8l"/>
                         <outlet property="personField" destination="bbG-Se-zFG" id="RLb-rj-l8A"/>
                         <outlet property="personRoller" destination="clf-x6-pQZ" id="Szb-Qu-HCu"/>

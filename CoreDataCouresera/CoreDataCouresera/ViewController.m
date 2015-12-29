@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *persistedData;
 @property (weak, nonatomic) IBOutlet UIPickerView *choreRoller;
 @property (nonatomic) PickerViewHelper *choreRollerHelper;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *personRoller;
 @property (nonatomic) PickerViewHelper *personRollerHelper;
@@ -60,6 +61,19 @@
     [self.appDelegate saveContext];
     [self updatePersonRoller];
 }
+
+- (IBAction)choreLogTapped:(UIButton *)sender {
+    NSLog(@"tap");
+    NSInteger choreRow = [self.choreRoller selectedRowInComponent:0];
+    NSInteger personRow = [self.personRoller selectedRowInComponent:0];
+    
+    ChoreMO *chore = [self.choreRollerHelper getItemFromArray:choreRow];
+    PersonMO *person = [self.personRollerHelper getItemFromArray:personRow];
+    
+    ChoreLogMO *choreLog = [self.appDelegate createChoreLogMO];
+    
+}
+
 
 
 - (IBAction)deleteTapped:(UIButton *)sender {
