@@ -71,7 +71,7 @@
     PersonMO *person = (PersonMO *)[self.personRollerHelper getItemFromArray:personRow];
     
     ChoreLogMO *choreLog = [self.appDelegate createChoreLogMO];
-    
+    choreLog.
     choreLog.person_who_did = person;
     choreLog.chore_done = chore;
     choreLog.when = [self.datePicker date];
