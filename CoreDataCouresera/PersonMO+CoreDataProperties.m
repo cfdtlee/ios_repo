@@ -2,7 +2,7 @@
 //  PersonMO+CoreDataProperties.m
 //  CoreDataCouresera
 //
-//  Created by Eric on 12/22/15.
+//  Created by Eric on 12/31/15.
 //  Copyright © 2015 Eric. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

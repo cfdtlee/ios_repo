@@ -70,20 +70,18 @@
     ChoreMO *chore = (ChoreMO *)[self.choreRollerHelper getItemFromArray:choreRow];
     PersonMO *person = (PersonMO *)[self.personRollerHelper getItemFromArray:personRow];
     
-    ChoreLogMO *choreLog = [self.appDelegate createChoreLogMO];
-    choreLog.
-    choreLog.person_who_did = person;
+    ChoreLogMO_ *choreLog = (ChoreLogMO_ *)[self.appDelegate createChoreLogMO];
+    choreLog.person_who_did_it = person;
     choreLog.chore_done = chore;
     choreLog.when = [self.datePicker date];
     
     [self.appDelegate saveContext];
+    [self updateLogList];
 }
 
 
 
 - (IBAction)deleteTapped:(UIButton *)sender {
-    NSLog(@"ag");
-    NSLog(@"delete"); //??
     NSManagedObjectContext *moc = self.appDelegate.managedObjectContext;
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Chore"];
     NSError *error = nil;
