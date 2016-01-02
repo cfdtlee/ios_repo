@@ -1,16 +1,16 @@
 //
-//  ChoreLogMO .m
+//  ChoreLogMO.m
 //  CoreDataCouresera
 //
-//  Created by Eric on 12/31/15.
-//  Copyright © 2015 Eric. All rights reserved.
+//  Created by Eric on 1/1/16.
+//  Copyright © 2016 Eric. All rights reserved.
 //
 
-#import "ChoreLogMO .h"
+#import "ChoreLogMO.h"
 #import "ChoreMO.h"
 #import "PersonMO.h"
 
-@implementation ChoreLogMO_
+@implementation ChoreLogMO
 
 // Insert code here to add functionality to your managed object subclass
 

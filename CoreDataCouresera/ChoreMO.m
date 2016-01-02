@@ -7,10 +7,13 @@
 //
 
 #import "ChoreMO.h"
-#import "ChoreLogMO .h"
+#import "ChoreLogMO.h"
 
 @implementation ChoreMO
 
 // Insert code here to add functionality to your managed object subclass
-
+- (NSString *)description
+{
+    return self.chore_name;
+}
 @end

@@ -72,6 +72,9 @@
                                 <rect key="frame" x="48" y="432" width="57" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Add Log"/>
+                                <connections>
+                                    <action selector="choreLogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lf9-hO-fQI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-IT-bvm">
                                 <rect key="frame" x="190" y="431" width="97" height="30"/>

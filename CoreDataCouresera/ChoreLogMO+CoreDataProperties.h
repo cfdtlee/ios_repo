@@ -1,19 +1,19 @@
 //
-//  ChoreLogMO +CoreDataProperties.h
+//  ChoreLogMO+CoreDataProperties.h
 //  CoreDataCouresera
 //
-//  Created by Eric on 12/31/15.
-//  Copyright © 2015 Eric. All rights reserved.
+//  Created by Eric on 1/1/16.
+//  Copyright © 2016 Eric. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "ChoreLogMO .h"
+#import "ChoreLogMO.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChoreLogMO_ (CoreDataProperties)
+@interface ChoreLogMO (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSDate *when;
 @property (nullable, nonatomic, retain) ChoreMO *chore_done;

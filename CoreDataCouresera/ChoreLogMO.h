@@ -1,9 +1,9 @@
 //
-//  ChoreLogMO .h
+//  ChoreLogMO.h
 //  CoreDataCouresera
 //
-//  Created by Eric on 12/31/15.
-//  Copyright © 2015 Eric. All rights reserved.
+//  Created by Eric on 1/1/16.
+//  Copyright © 2016 Eric. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChoreLogMO_ : NSManagedObject
+@interface ChoreLogMO : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -21,4 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "ChoreLogMO +CoreDataProperties.h"
+#import "ChoreLogMO+CoreDataProperties.h"

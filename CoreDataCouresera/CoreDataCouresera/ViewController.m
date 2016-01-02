@@ -70,7 +70,7 @@
     ChoreMO *chore = (ChoreMO *)[self.choreRollerHelper getItemFromArray:choreRow];
     PersonMO *person = (PersonMO *)[self.personRollerHelper getItemFromArray:personRow];
     
-    ChoreLogMO_ *choreLog = (ChoreLogMO_ *)[self.appDelegate createChoreLogMO];
+    ChoreLogMO *choreLog = (ChoreLogMO *)[self.appDelegate createChoreLogMO];
     choreLog.person_who_did_it = person;
     choreLog.chore_done = chore;
     choreLog.when = [self.datePicker date];
@@ -87,15 +87,42 @@
     NSError *error = nil;
     NSArray *results = [moc executeFetchRequest:request error:&error];
     if (!results) {
-        NSLog(@"Error fetching Person objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        NSLog(@"Error fetching Chore objects: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
     for (ChoreMO *c in results) {
         [moc deleteObject:c];
     }
+    
+    request = [NSFetchRequest fetchRequestWithEntityName:@"person"];
+    
+    error = nil;
+    results = [moc executeFetchRequest:request error:&error]; //
+    if (!results) {
+        NSLog(@"Error fetching person object: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+    
+    for(PersonMO *p in results) {
+        [moc deleteObject:p];
+    }
+    
+    request = [NSFetchRequest fetchRequestWithEntityName:@"ChoreLog"];
+    
+    error = nil;
+    results = [moc executeFetchRequest:request error:&error];
+    if (!results) {
+        NSLog(@"Error fetching ChoreLog objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+    
+    for (ChoreLogMO *cl in results){
+        [moc deleteObject:cl];
+    }
+    
     [self.appDelegate saveContext]; // forget this line
     [self updateLogList];
-        [self updateChoreRoller];
+    [self updateChoreRoller];
 }
 
 - (void)updateLogList {

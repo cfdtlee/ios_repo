@@ -11,8 +11,8 @@
 		072EC17F1C3633170000506D /* ChoreMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1751C3633170000506D /* ChoreMO.m */; };
 		072EC1801C3633170000506D /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1771C3633170000506D /* PersonMO+CoreDataProperties.m */; };
 		072EC1811C3633170000506D /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1791C3633170000506D /* PersonMO.m */; };
-		072EC1821C3633170000506D /* ChoreLogMO +CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC17B1C3633170000506D /* ChoreLogMO +CoreDataProperties.m */; };
-		072EC1831C3633170000506D /* ChoreLogMO .m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC17D1C3633170000506D /* ChoreLogMO .m */; };
+		072EC1881C376C8C0000506D /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1851C376C8C0000506D /* ChoreLogMO+CoreDataProperties.m */; };
+		072EC1891C376C8C0000506D /* ChoreLogMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1871C376C8C0000506D /* ChoreLogMO.m */; };
 		07B552011C29C589009FF08E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B552001C29C589009FF08E /* main.m */; };
 		07B552041C29C589009FF08E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B552031C29C589009FF08E /* AppDelegate.m */; };
 		07B552071C29C589009FF08E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B552061C29C589009FF08E /* ViewController.m */; };
@@ -51,10 +51,10 @@
 		072EC1771C3633170000506D /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
 		072EC1781C3633170000506D /* PersonMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonMO.h; sourceTree = "<group>"; };
 		072EC1791C3633170000506D /* PersonMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonMO.m; sourceTree = "<group>"; };
-		072EC17A1C3633170000506D /* ChoreLogMO +CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO +CoreDataProperties.h"; sourceTree = "<group>"; };
-		072EC17B1C3633170000506D /* ChoreLogMO +CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO +CoreDataProperties.m"; sourceTree = "<group>"; };
-		072EC17C1C3633170000506D /* ChoreLogMO .h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO .h"; sourceTree = "<group>"; };
-		072EC17D1C3633170000506D /* ChoreLogMO .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO .m"; sourceTree = "<group>"; };
+		072EC1841C376C8C0000506D /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		072EC1851C376C8C0000506D /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		072EC1861C376C8C0000506D /* ChoreLogMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreLogMO.h; sourceTree = "<group>"; };
+		072EC1871C376C8C0000506D /* ChoreLogMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreLogMO.m; sourceTree = "<group>"; };
 		07B551FC1C29C589009FF08E /* CoreDataCouresera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCouresera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B552001C29C589009FF08E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07B552021C29C589009FF08E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +104,10 @@
 		07B551F31C29C589009FF08E = {
 			isa = PBXGroup;
 			children = (
+				072EC1841C376C8C0000506D /* ChoreLogMO+CoreDataProperties.h */,
+				072EC1851C376C8C0000506D /* ChoreLogMO+CoreDataProperties.m */,
+				072EC1861C376C8C0000506D /* ChoreLogMO.h */,
+				072EC1871C376C8C0000506D /* ChoreLogMO.m */,
 				072EC1721C3633170000506D /* ChoreMO+CoreDataProperties.h */,
 				072EC1731C3633170000506D /* ChoreMO+CoreDataProperties.m */,
 				072EC1741C3633170000506D /* ChoreMO.h */,
@@ -112,10 +116,6 @@
 				072EC1771C3633170000506D /* PersonMO+CoreDataProperties.m */,
 				072EC1781C3633170000506D /* PersonMO.h */,
 				072EC1791C3633170000506D /* PersonMO.m */,
-				072EC17A1C3633170000506D /* ChoreLogMO +CoreDataProperties.h */,
-				072EC17B1C3633170000506D /* ChoreLogMO +CoreDataProperties.m */,
-				072EC17C1C3633170000506D /* ChoreLogMO .h */,
-				072EC17D1C3633170000506D /* ChoreLogMO .m */,
 				07B551FE1C29C589009FF08E /* CoreDataCouresera */,
 				07B5521B1C29C589009FF08E /* CoreDataCoureseraTests */,
 				07B552261C29C589009FF08E /* CoreDataCoureseraUITests */,
@@ -314,10 +314,10 @@
 				07CA29D71C2CCC09009D5B72 /* PickerViewHelper.m in Sources */,
 				072EC1811C3633170000506D /* PersonMO.m in Sources */,
 				07B552041C29C589009FF08E /* AppDelegate.m in Sources */,
-				072EC1821C3633170000506D /* ChoreLogMO +CoreDataProperties.m in Sources */,
 				07B5520D1C29C589009FF08E /* CoreDataCouresera.xcdatamodeld in Sources */,
-				072EC1831C3633170000506D /* ChoreLogMO .m in Sources */,
+				072EC1881C376C8C0000506D /* ChoreLogMO+CoreDataProperties.m in Sources */,
 				072EC1801C3633170000506D /* PersonMO+CoreDataProperties.m in Sources */,
+				072EC1891C376C8C0000506D /* ChoreLogMO.m in Sources */,
 				07B552011C29C589009FF08E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
