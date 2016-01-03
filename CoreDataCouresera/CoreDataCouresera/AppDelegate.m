@@ -38,7 +38,6 @@
 
 - (ChoreLogMO *)createChoreLogMO {
     NSManagedObjectContext *moc = [self managedObjectContext];
-    
     ChoreLogMO *choreLogMO = (ChoreLogMO *)[NSEntityDescription insertNewObjectForEntityForName:@"ChoreLog" inManagedObjectContext:moc];
     return choreLogMO;
 }

@@ -16,6 +16,15 @@
 		072EC1A91C377E350000506D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072EC1A71C377E350000506D /* LaunchScreen.storyboard */; };
 		072EC1B41C377E350000506D /* coredata_ios_essentialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1B31C377E350000506D /* coredata_ios_essentialTests.m */; };
 		072EC1BF1C377E350000506D /* coredata_ios_essentialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1BE1C377E350000506D /* coredata_ios_essentialUITests.m */; };
+		072EC1DC1C38D7590000506D /* ChoreMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1CD1C38D7590000506D /* ChoreMO+CoreDataProperties.m */; };
+		072EC1DD1C38D7590000506D /* ChoreMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1CF1C38D7590000506D /* ChoreMO.m */; };
+		072EC1DE1C38D7590000506D /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1D11C38D7590000506D /* ChoreLogMO+CoreDataProperties.m */; };
+		072EC1DF1C38D7590000506D /* ChoreLogMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1D31C38D7590000506D /* ChoreLogMO.m */; };
+		072EC1E01C38D7590000506D /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1D51C38D7590000506D /* PersonMO+CoreDataProperties.m */; };
+		072EC1E11C38D7590000506D /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1D71C38D7590000506D /* PersonMO.m */; };
+		072EC1E21C38D7590000506D /* ContactsMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1D91C38D7590000506D /* ContactsMO+CoreDataProperties.m */; };
+		072EC1E31C38D7590000506D /* ContactsMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1DB1C38D7590000506D /* ContactsMO.m */; };
+		072EC1E61C38DE790000506D /* PickerViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EC1E51C38DE790000506D /* PickerViewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,24 @@
 		072EC1BA1C377E350000506D /* coredata_ios_essentialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coredata_ios_essentialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		072EC1BE1C377E350000506D /* coredata_ios_essentialUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coredata_ios_essentialUITests.m; sourceTree = "<group>"; };
 		072EC1C01C377E350000506D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072EC1CC1C38D7590000506D /* ChoreMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		072EC1CD1C38D7590000506D /* ChoreMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		072EC1CE1C38D7590000506D /* ChoreMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreMO.h; sourceTree = "<group>"; };
+		072EC1CF1C38D7590000506D /* ChoreMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreMO.m; sourceTree = "<group>"; };
+		072EC1D01C38D7590000506D /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		072EC1D11C38D7590000506D /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		072EC1D21C38D7590000506D /* ChoreLogMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreLogMO.h; sourceTree = "<group>"; };
+		072EC1D31C38D7590000506D /* ChoreLogMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreLogMO.m; sourceTree = "<group>"; };
+		072EC1D41C38D7590000506D /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		072EC1D51C38D7590000506D /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		072EC1D61C38D7590000506D /* PersonMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonMO.h; sourceTree = "<group>"; };
+		072EC1D71C38D7590000506D /* PersonMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonMO.m; sourceTree = "<group>"; };
+		072EC1D81C38D7590000506D /* ContactsMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		072EC1D91C38D7590000506D /* ContactsMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactsMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		072EC1DA1C38D7590000506D /* ContactsMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsMO.h; sourceTree = "<group>"; };
+		072EC1DB1C38D7590000506D /* ContactsMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsMO.m; sourceTree = "<group>"; };
+		072EC1E41C38DE790000506D /* PickerViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewHelper.h; sourceTree = "<group>"; };
+		072EC1E51C38DE790000506D /* PickerViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +110,22 @@
 		072EC18A1C377E340000506D = {
 			isa = PBXGroup;
 			children = (
+				072EC1CC1C38D7590000506D /* ChoreMO+CoreDataProperties.h */,
+				072EC1CD1C38D7590000506D /* ChoreMO+CoreDataProperties.m */,
+				072EC1CE1C38D7590000506D /* ChoreMO.h */,
+				072EC1CF1C38D7590000506D /* ChoreMO.m */,
+				072EC1D01C38D7590000506D /* ChoreLogMO+CoreDataProperties.h */,
+				072EC1D11C38D7590000506D /* ChoreLogMO+CoreDataProperties.m */,
+				072EC1D21C38D7590000506D /* ChoreLogMO.h */,
+				072EC1D31C38D7590000506D /* ChoreLogMO.m */,
+				072EC1D41C38D7590000506D /* PersonMO+CoreDataProperties.h */,
+				072EC1D51C38D7590000506D /* PersonMO+CoreDataProperties.m */,
+				072EC1D61C38D7590000506D /* PersonMO.h */,
+				072EC1D71C38D7590000506D /* PersonMO.m */,
+				072EC1D81C38D7590000506D /* ContactsMO+CoreDataProperties.h */,
+				072EC1D91C38D7590000506D /* ContactsMO+CoreDataProperties.m */,
+				072EC1DA1C38D7590000506D /* ContactsMO.h */,
+				072EC1DB1C38D7590000506D /* ContactsMO.m */,
 				072EC1951C377E340000506D /* coredata_ios_essential */,
 				072EC1B21C377E350000506D /* coredata_ios_essentialTests */,
 				072EC1BD1C377E350000506D /* coredata_ios_essentialUITests */,
@@ -113,6 +156,8 @@
 				072EC1AA1C377E350000506D /* Info.plist */,
 				072EC1A21C377E340000506D /* coredata_ios_essential.xcdatamodeld */,
 				072EC1961C377E340000506D /* Supporting Files */,
+				072EC1E41C38DE790000506D /* PickerViewHelper.h */,
+				072EC1E51C38DE790000506D /* PickerViewHelper.m */,
 			);
 			path = coredata_ios_essential;
 			sourceTree = "<group>";
@@ -274,9 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				072EC19E1C377E340000506D /* ViewController.m in Sources */,
+				072EC1DD1C38D7590000506D /* ChoreMO.m in Sources */,
+				072EC1E61C38DE790000506D /* PickerViewHelper.m in Sources */,
 				072EC19B1C377E340000506D /* AppDelegate.m in Sources */,
+				072EC1E01C38D7590000506D /* PersonMO+CoreDataProperties.m in Sources */,
+				072EC1DE1C38D7590000506D /* ChoreLogMO+CoreDataProperties.m in Sources */,
 				072EC1981C377E340000506D /* main.m in Sources */,
+				072EC1E31C38D7590000506D /* ContactsMO.m in Sources */,
 				072EC1A41C377E340000506D /* coredata_ios_essential.xcdatamodeld in Sources */,
+				072EC1DF1C38D7590000506D /* ChoreLogMO.m in Sources */,
+				072EC1E11C38D7590000506D /* PersonMO.m in Sources */,
+				072EC1E21C38D7590000506D /* ContactsMO+CoreDataProperties.m in Sources */,
+				072EC1DC1C38D7590000506D /* ChoreMO+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
