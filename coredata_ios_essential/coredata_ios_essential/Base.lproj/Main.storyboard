@@ -28,6 +28,9 @@
                                 <rect key="frame" x="20" y="50" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="addchore"/>
+                                <connections>
+                                    <action selector="choreTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlW-ME-yOW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-5L-lZf">
                                 <rect key="frame" x="0.0" y="371" width="320" height="189"/>
@@ -40,6 +43,9 @@
                                 <rect key="frame" x="203" y="50" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="personTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xu-98-jdw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2S-cA-WiR">
                                 <rect key="frame" x="203" y="12" width="97" height="30"/>
@@ -66,12 +72,18 @@
                                 <rect key="frame" x="48" y="424" width="57" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Add Log"/>
+                                <connections>
+                                    <action selector="choreLogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rg7-vz-Ioy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-i4-uJO">
                                 <rect key="frame" x="190" y="423" width="97" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkx-uv-iyZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -85,6 +97,14 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="choreField" destination="IQT-7F-RH8" id="vct-iz-Bc5"/>
+                        <outlet property="choreRoller" destination="PfM-lK-hwC" id="Leq-Md-bqI"/>
+                        <outlet property="datePicker" destination="ZDN-gy-92a" id="Z1Y-Z0-51E"/>
+                        <outlet property="persistedData" destination="1Fy-5L-lZf" id="J7G-BH-o5f"/>
+                        <outlet property="personField" destination="k2S-cA-WiR" id="cfR-hv-vkI"/>
+                        <outlet property="personRoller" destination="4vb-lL-p4X" id="KsR-pa-WEw"/>
+                    </connections>
                 </viewController>
             </objects>
         </scene>
