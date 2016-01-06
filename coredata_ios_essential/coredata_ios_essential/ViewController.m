@@ -30,14 +30,14 @@
     
     self.appDelegate = [[UIApplication sharedApplication] delegate];
     
-//    self.choreRollerHelper = [[PickerViewHelper alloc]init];
-//    [self.choreRoller setDelegate:self.choreRollerHelper];
-//    [self.choreRoller setDataSource:self.choreRollerHelper];
-//    
+    self.choreRollerHelper = [[PickerViewHelper alloc]init];
+    [self.choreRoller setDelegate:self.choreRollerHelper];
+    [self.choreRoller setDataSource:self.choreRollerHelper];
     
-//    self.personRollerHelper = [[PickerViewHelper alloc]init];
-//    [self.personRoller setDelegate:self.personRollerHelper];
-//    [self.personRoller setDataSource:self.personRollerHelper];
+    
+    self.personRollerHelper = [[PickerViewHelper alloc]init];
+    [self.personRoller setDelegate:self.personRollerHelper];
+    [self.personRoller setDataSource:self.personRollerHelper];
 
     [self updateLogList];
     [self updateChoreRoller];
