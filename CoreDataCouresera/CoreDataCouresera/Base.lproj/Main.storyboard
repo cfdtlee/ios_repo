@@ -42,7 +42,7 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-zp-7co">
                                 <rect key="frame" x="203" y="58" width="97" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="add person"/>
                                 <connections>
                                     <action selector="personTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6a2-Rh-eAF"/>
                                 </connections>

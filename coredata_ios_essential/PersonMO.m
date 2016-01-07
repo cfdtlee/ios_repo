@@ -12,5 +12,8 @@
 @implementation PersonMO
 
 // Insert code here to add functionality to your managed object subclass
-
+- (NSString *)description
+{
+    return self.person_name;
+}
 @end
