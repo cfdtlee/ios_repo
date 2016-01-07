@@ -18,12 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Bq-qe-0Cu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="JhT-wv-n4b" appends="YES" id="vPW-s0-K2l"/>
+                                    <outletCollection property="gestureRecognizers" destination="QuU-FJ-EBk" appends="YES" id="O0f-sB-qUP"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -41,6 +42,11 @@
                         <action selector="tap:" destination="BYZ-38-t0r" id="Qzq-od-rrS"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="QuU-FJ-EBk">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="EW4-Nw-h5B"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="380" y="337"/>
         </scene>
