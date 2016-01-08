@@ -14,6 +14,7 @@
 		07E609341C3DC5060066F9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E609331C3DC5060066F9C9 /* Assets.xcassets */; };
 		07E609371C3DC5060066F9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E609351C3DC5060066F9C9 /* LaunchScreen.storyboard */; };
 		07E609401C3E16700066F9C9 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E6093F1C3E16700066F9C9 /* DropitBehavior.m */; };
+		07E609431C3F3F780066F9C9 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E609421C3F3F780066F9C9 /* BezierPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		07E609381C3DC5060066F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07E6093E1C3E16700066F9C9 /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		07E6093F1C3E16700066F9C9 /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		07E609411C3F3F780066F9C9 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		07E609421C3F3F780066F9C9 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				07E6092D1C3DC5060066F9C9 /* ViewController.h */,
 				07E6092E1C3DC5060066F9C9 /* ViewController.m */,
 				07E609301C3DC5060066F9C9 /* Main.storyboard */,
+				07E609411C3F3F780066F9C9 /* BezierPathView.h */,
+				07E609421C3F3F780066F9C9 /* BezierPathView.m */,
 				07E6093E1C3E16700066F9C9 /* DropitBehavior.h */,
 				07E6093F1C3E16700066F9C9 /* DropitBehavior.m */,
 				07E609331C3DC5060066F9C9 /* Assets.xcassets */,
@@ -156,6 +161,7 @@
 			files = (
 				07E6092F1C3DC5060066F9C9 /* ViewController.m in Sources */,
 				07E609401C3E16700066F9C9 /* DropitBehavior.m in Sources */,
+				07E609431C3F3F780066F9C9 /* BezierPathView.m in Sources */,
 				07E6092C1C3DC5060066F9C9 /* AppDelegate.m in Sources */,
 				07E609291C3DC5060066F9C9 /* main.m in Sources */,
 			);

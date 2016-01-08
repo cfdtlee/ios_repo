@@ -74,7 +74,6 @@
     choreLog.person_who_did_it = person;
     choreLog.chore_done = chore;
     choreLog.when = [self.datePicker date];
-    
     [self.appDelegate saveContext];
     [self updateLogList];
 }
