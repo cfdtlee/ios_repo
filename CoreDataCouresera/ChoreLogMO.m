@@ -13,5 +13,7 @@
 @implementation ChoreLogMO
 
 // Insert code here to add functionality to your managed object subclass
-
+- (NSString *) description {
+    return [NSString stringWithFormat:@"(%@) (%@) (%@)", self.chore_done.chore_name, self.person_who_did_it.person_name, self.when];
+}
 @end

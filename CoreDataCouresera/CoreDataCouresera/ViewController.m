@@ -153,7 +153,7 @@
     }
     NSMutableArray *choreData = [[NSMutableArray alloc]init];
     for(ChoreMO *c in results) {
-        [choreData addObject:c.chore_name];
+        [choreData addObject:c];
     }
     [self.choreRollerHelper setArray:choreData];
     [self.choreRoller reloadAllComponents];
