@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Imaginarium-->
@@ -73,16 +72,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Wm-zc-n1T">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oWI-1N-ut5">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <animations/>
-                                    </stackView>
-                                </subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Zru-oU-O9t">
+                                <rect key="frame" x="142" y="265" width="37" height="37"/>
                                 <animations/>
-                            </stackView>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-Pi-eBT">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <animations/>
@@ -91,20 +85,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="bottom" secondItem="gsb-5W-EfS" secondAttribute="top" id="2Jj-5p-oAD"/>
-                            <constraint firstItem="0Wm-zc-n1T" firstAttribute="top" secondItem="n9k-RB-DVT" secondAttribute="bottom" constant="156" id="9yr-CH-2SD"/>
-                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="leading" secondItem="eOR-IY-X3V" secondAttribute="leading" id="ACb-nK-ifq"/>
-                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="top" secondItem="n9k-RB-DVT" secondAttribute="bottom" id="Ozg-jW-eXP"/>
-                            <constraint firstItem="0Wm-zc-n1T" firstAttribute="leading" secondItem="eOR-IY-X3V" secondAttribute="leadingMargin" constant="24" id="TjK-Y0-imh"/>
-                            <constraint firstItem="0Wm-zc-n1T" firstAttribute="centerX" secondItem="eOR-IY-X3V" secondAttribute="centerX" id="g3q-Vq-GBO"/>
-                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="centerX" secondItem="0Wm-zc-n1T" secondAttribute="centerX" id="hG8-UO-qdl"/>
-                            <constraint firstItem="0Wm-zc-n1T" firstAttribute="centerY" secondItem="eOR-IY-X3V" secondAttribute="centerY" id="qjC-fK-Kcf"/>
+                            <constraint firstAttribute="trailing" secondItem="cKZ-Pi-eBT" secondAttribute="trailing" id="FeJ-Vk-ojX"/>
+                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="leading" secondItem="eOR-IY-X3V" secondAttribute="leading" id="WBb-53-xet"/>
+                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="bottom" secondItem="gsb-5W-EfS" secondAttribute="top" id="cFv-W3-4gr"/>
+                            <constraint firstItem="cKZ-Pi-eBT" firstAttribute="top" secondItem="n9k-RB-DVT" secondAttribute="bottom" id="qYs-8f-vYx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W5c-Ze-CGC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="scrollView" destination="cKZ-Pi-eBT" id="of4-lq-JmL"/>
+                        <outlet property="spinner" destination="Zru-oU-O9t" id="BnM-ar-pb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKg-Qf-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>

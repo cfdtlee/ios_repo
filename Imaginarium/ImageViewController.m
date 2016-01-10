@@ -12,6 +12,7 @@
 @property (nonatomic, strong) UIImageView *imageView;
 @property (strong, nonatomic) UIImage *image;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @end
 
 @implementation ImageViewController
@@ -40,11 +41,12 @@
 
 // use another thread to download image
 - (void)startDownloadingImage {
+    [self.spinner startAnimating];
     self.image = nil;
     if (self.imageURL) {
         NSURLRequest *request = [NSURLRequest requestWithURL:self.imageURL];
-        NSURLSessionConfiguration *configration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:configration];
+        NSURLSessionConfiguration *configration = [NSURLSessionConfiguration ephemeralSessionConfiguration];//backgroundSessionConfigurationWithIdentifier
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configration];//if use background -- use delegate here
         NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable localfile, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if (!error) {
                 if ([request.URL isEqual:self.imageURL]) {
@@ -78,6 +80,7 @@
     self.imageView.image = image;
     [self.imageView sizeToFit];
     self.scrollView.contentSize = self.image ? self.image.size : CGSizeZero;
+    [self.spinner stopAnimating];
 }
 
 - (void)viewDidLoad {
