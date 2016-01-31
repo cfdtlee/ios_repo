@@ -119,7 +119,7 @@
         [moc deleteObject:cl];
     }
     
-    [self.appDelegate saveContext]; // forget this line
+    [self.appDelegate saveContext]; // forgot this line
     [self updateLogList];
     [self updateChoreRoller];
 }
