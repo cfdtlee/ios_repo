@@ -3,23 +3,118 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bgI-vq-MFq">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LRZ-yY-Xlv"/>
+                        <viewControllerLayoutGuide type="bottom" id="tIh-kx-H5c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ymW-9q-Mpl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WL-iQ-vRh">
+                                <rect key="frame" x="20" y="144" width="280" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Designer News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90H-df-vsL">
+                                        <rect key="frame" x="70" y="55" width="140" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="b0W-E6-0md">
+                                        <rect key="frame" x="15" y="106" width="250" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-XS-wtl">
+                                        <rect key="frame" x="15" y="165" width="250" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-Tr-FKW">
+                                        <rect key="frame" x="102" y="23" width="76" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="qE3-wh-Qn7">
+                                        <rect key="frame" x="35" y="119" width="26" height="18"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="gHU-Bs-JPd">
+                                        <rect key="frame" x="35" y="174" width="25" height="25"/>
+                                        <animations/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tBh-om-QSn">
+                                        <rect key="frame" x="15" y="220" width="250" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uAU-jU-au4">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p9U-Tz-079">
+                                                        <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-Wf-3RH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                                                <animations/>
+                                                                <state key="normal" title="Log in" backgroundImage="button-blue"/>
+                                                                <connections>
+                                                                    <action selector="loginButtonDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rg2-TD-MGK"/>
+                                                                    <segue destination="Y0g-mH-TZe" kind="push" id="EUC-JR-o5m"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oh no, wrong info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-n6-S5q">
+                                        <rect key="frame" x="15" y="281" width="136" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.77254901960784317" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRaduis">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <animations/>
-                        <state key="normal" backgroundImage="Login"/>
-                        <connections>
-                            <segue destination="Y0g-mH-TZe" kind="push" id="lIZ-pu-iV9"/>
-                        </connections>
-                    </button>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.19607843137254902" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="centerY" secondItem="ymW-9q-Mpl" secondAttribute="centerY" id="1nv-J9-OMI"/>
+                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="centerX" secondItem="ymW-9q-Mpl" secondAttribute="centerX" id="KKj-l0-ghd"/>
+                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="top" secondItem="LRZ-yY-Xlv" secondAttribute="bottom" constant="124" id="Xbp-bq-Rhy"/>
+                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="leading" secondItem="ymW-9q-Mpl" secondAttribute="leadingMargin" constant="4" id="ocm-No-3pC"/>
+                        </constraints>
+                    </view>
                     <navigationItem key="navigationItem" id="rA1-HH-I1j"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="5WL-iQ-vRh" id="nGe-v6-QSw"/>
+                        <outlet property="infoText" destination="kaM-n6-S5q" id="NnM-Ah-jsF"/>
+                        <outlet property="loginButton" destination="e4L-Wf-3RH" id="MHB-Ec-B5b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,12 +163,12 @@
         <!--View Controller-->
         <scene sceneID="u5d-th-pkO">
             <objects>
-                <viewController id="mfB-za-nwT" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ofi-h4-H94">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="mfB-za-nwT" customClass="ViewController" sceneMemberID="viewController">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S5i-fh-3km">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <state key="normal" backgroundImage="Article"/>
+                        <state key="normal" title="Button"/>
                     </button>
                     <navigationItem key="navigationItem" id="XS0-RO-slF"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -104,9 +199,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Article" width="320" height="1240"/>
         <image name="Home" width="320" height="568"/>
-        <image name="Login" width="320" height="568"/>
         <image name="Login-Active" width="320" height="568"/>
+        <image name="button-blue" width="250" height="44"/>
+        <image name="icon-mail" width="26" height="18"/>
+        <image name="icon-password" width="25" height="25"/>
+        <image name="input-outline" width="250" height="44"/>
     </resources>
 </document>
