@@ -18,16 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WL-iQ-vRh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WL-iQ-vRh" customClass="CSAnimationView">
                                 <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Designer News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90H-df-vsL">
-                                        <rect key="frame" x="70" y="55" width="140" height="24"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="b0W-E6-0md">
                                         <rect key="frame" x="15" y="106" width="250" height="44"/>
                                         <animations/>
@@ -40,13 +33,36 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-Tr-FKW">
-                                        <rect key="frame" x="102" y="23" width="76" height="24"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSp-9H-K8t" customClass="CSAnimationView">
+                                        <rect key="frame" x="50" y="3" width="180" height="96"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-Tr-FKW">
+                                                <rect key="frame" x="52" y="20" width="76" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Designer News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90H-df-vsL">
+                                                <rect key="frame" x="20" y="52" width="140" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="qE3-wh-Qn7">
                                         <rect key="frame" x="35" y="119" width="26" height="18"/>
                                         <animations/>
@@ -69,7 +85,6 @@
                                                                 <animations/>
                                                                 <state key="normal" title="Log in" backgroundImage="button-blue"/>
                                                                 <connections>
-                                                                    <action selector="loginButtonDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rg2-TD-MGK"/>
                                                                     <segue destination="Y0g-mH-TZe" kind="push" id="EUC-JR-o5m"/>
                                                                 </connections>
                                                             </button>
@@ -96,6 +111,10 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRaduis">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -104,21 +123,16 @@
                         <constraints>
                             <constraint firstItem="5WL-iQ-vRh" firstAttribute="centerY" secondItem="ymW-9q-Mpl" secondAttribute="centerY" id="1nv-J9-OMI"/>
                             <constraint firstItem="5WL-iQ-vRh" firstAttribute="centerX" secondItem="ymW-9q-Mpl" secondAttribute="centerX" id="KKj-l0-ghd"/>
-                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="top" secondItem="LRZ-yY-Xlv" secondAttribute="bottom" constant="124" id="Xbp-bq-Rhy"/>
+                            <constraint firstItem="5WL-iQ-vRh" firstAttribute="top" secondItem="LRZ-yY-Xlv" secondAttribute="bottom" constant="124" id="hlS-8F-TQM"/>
                             <constraint firstItem="5WL-iQ-vRh" firstAttribute="leading" secondItem="ymW-9q-Mpl" secondAttribute="leadingMargin" constant="4" id="ocm-No-3pC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rA1-HH-I1j"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="dialogView" destination="5WL-iQ-vRh" id="nGe-v6-QSw"/>
-                        <outlet property="infoText" destination="kaM-n6-S5q" id="NnM-Ah-jsF"/>
-                        <outlet property="loginButton" destination="e4L-Wf-3RH" id="MHB-Ec-B5b"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="965"/>
+            <point key="canvasLocation" x="845" y="965"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TBS-Cj-LZj">
@@ -164,18 +178,12 @@
         <scene sceneID="u5d-th-pkO">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="mfB-za-nwT" customClass="ViewController" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S5i-fh-3km">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <animations/>
-                        <state key="normal" title="Button"/>
-                    </button>
                     <navigationItem key="navigationItem" id="XS0-RO-slF"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRL-qW-Qdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="965"/>
+            <point key="canvasLocation" x="2019" y="965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VwI-mc-VRD">
