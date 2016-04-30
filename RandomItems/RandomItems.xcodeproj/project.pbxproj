@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07027BB11CC59CD40008B5FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07027BB01CC59CD40008B5FD /* main.m */; };
+		0784CE161CD056AE00074E86 /* BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784CE151CD056AE00074E86 /* BNRContainer.m */; };
 		07D7AC591CCE9DB200BADF6C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7AC581CCE9DB200BADF6C /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		07027BAD1CC59CD40008B5FD /* RandomItems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomItems; sourceTree = BUILT_PRODUCTS_DIR; };
 		07027BB01CC59CD40008B5FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0784CE141CD056AE00074E86 /* BNRContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRContainer.h; sourceTree = "<group>"; };
+		0784CE151CD056AE00074E86 /* BNRContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRContainer.m; sourceTree = "<group>"; };
 		07D7AC571CCE9DB200BADF6C /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		07D7AC581CCE9DB200BADF6C /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				07027BB01CC59CD40008B5FD /* main.m */,
 				07D7AC571CCE9DB200BADF6C /* BNRItem.h */,
 				07D7AC581CCE9DB200BADF6C /* BNRItem.m */,
+				0784CE141CD056AE00074E86 /* BNRContainer.h */,
+				0784CE151CD056AE00074E86 /* BNRContainer.m */,
 			);
 			path = RandomItems;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				07027BB11CC59CD40008B5FD /* main.m in Sources */,
 				07D7AC591CCE9DB200BADF6C /* BNRItem.m in Sources */,
+				0784CE161CD056AE00074E86 /* BNRContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

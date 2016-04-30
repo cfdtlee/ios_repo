@@ -25,8 +25,9 @@ int main(int argc, const char * argv[]) {
             BNRItem *item = [BNRItem randomItem];
             [items addObject:item];
         }
-
+//        items
         for (BNRItem *item in items) {
+            
             NSLog(@"%@", item);
         }
         items = nil;
