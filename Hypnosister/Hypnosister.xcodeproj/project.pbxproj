@@ -13,6 +13,7 @@
 		07CA2A711CD3C42F00F654D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CA2A6F1CD3C42F00F654D0 /* Main.storyboard */; };
 		07CA2A731CD3C42F00F654D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CA2A721CD3C42F00F654D0 /* Assets.xcassets */; };
 		07CA2A761CD3C42F00F654D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CA2A741CD3C42F00F654D0 /* LaunchScreen.storyboard */; };
+		07DF4B371CD994D80064083B /* BNRHypnsisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF4B361CD994D80064083B /* BNRHypnsisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		07CA2A721CD3C42F00F654D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CA2A751CD3C42F00F654D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07CA2A771CD3C42F00F654D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DF4B351CD994D80064083B /* BNRHypnsisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnsisView.h; sourceTree = "<group>"; };
+		07DF4B361CD994D80064083B /* BNRHypnsisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnsisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				07CA2A691CD3C42F00F654D0 /* AppDelegate.h */,
 				07CA2A6A1CD3C42F00F654D0 /* AppDelegate.m */,
+				07DF4B351CD994D80064083B /* BNRHypnsisView.h */,
+				07DF4B361CD994D80064083B /* BNRHypnsisView.m */,
 				07CA2A6C1CD3C42F00F654D0 /* ViewController.h */,
 				07CA2A6D1CD3C42F00F654D0 /* ViewController.m */,
 				07CA2A6F1CD3C42F00F654D0 /* Main.storyboard */,
@@ -151,6 +156,7 @@
 			files = (
 				07CA2A6E1CD3C42F00F654D0 /* ViewController.m in Sources */,
 				07CA2A6B1CD3C42F00F654D0 /* AppDelegate.m in Sources */,
+				07DF4B371CD994D80064083B /* BNRHypnsisView.m in Sources */,
 				07CA2A681CD3C42F00F654D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +304,7 @@
 				07CA2A7C1CD3C42F00F654D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
