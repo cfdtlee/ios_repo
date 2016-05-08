@@ -1,6 +1,6 @@
 //
-//  BNRHypnsisView.h
-//  Hypnosister
+//  ViewController.h
+//  test
 //
 //  Created by Eric on 5/6/16.
 //  Copyright © 2016 Eric. All rights reserved.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BNRHypnsisView : UIView
+@interface ViewController : UIViewController
+
 
 @end
+

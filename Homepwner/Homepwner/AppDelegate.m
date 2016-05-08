@@ -22,6 +22,11 @@
     ItemViewController *itemViewController = [[ItemViewController alloc] init];
     self.window.rootViewController = itemViewController;
     
+    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    UIView *firstView = [[UIView alloc] initWithFrame:firstFrame];
+    firstView.backgroundColor = [UIColor redColor];
+    [self.window addSubview:firstView];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  Hypnosister
+//  test
 //
-//  Created by Eric on 4/29/16.
+//  Created by Eric on 5/6/16.
 //  Copyright © 2016 Eric. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "BNRHypnsisView.h"
-#import "ViewController.h"
+#import "test.h"
 @interface AppDelegate ()
 
 @end
@@ -17,32 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    CGRect firstFrame = self.window.bounds;
-//
-//    BNRHypnsisView *firstView = [[BNRHypnsisView alloc] initWithFrame:firstFrame];
-//    [firstView setUserInteractionEnabled:YES];
-//    firstView.backgroundColor = [UIColor whiteColor];
-
     
-    ViewController *vc = [[ViewController alloc]init];
-
-    self.window.rootViewController = vc;
-//    [self.window addSubview:firstView];
-
-    CGRect screenRect = self.window.bounds;
-    CGRect bigRect = screenRect;
-    bigRect.size.width *= 2;
-    bigRect.size.height *= 2;
+    CGRect firstFrame = CGRectMake(160, 140, 100, 250);
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:bigRect];
-    [self.window addSubview:scrollView];
+    test *firstView = [[test alloc] initWithFrame:firstFrame];
+    firstView.backgroundColor = [UIColor redColor];
     
-    BNRHypnsisView *hypnosisView = [[BNRHypnsisView alloc] initWithFrame:bigRect];
-    [scrollView addSubview:hypnosisView];
-    
-//    self.window.rootViewController = firstView;
-    
+    [self.window addSubview:firstView];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
