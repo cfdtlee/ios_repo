@@ -10,7 +10,7 @@
 
 @interface BNRHyponsisView()
 
-@property(strong, nonatomic) UIColor *circleColor;
+
 
 @end
 

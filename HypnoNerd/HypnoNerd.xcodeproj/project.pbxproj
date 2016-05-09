@@ -15,6 +15,10 @@
 		078AB0081CDEF0C0007323A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078AB0061CDEF0C0007323A2 /* LaunchScreen.storyboard */; };
 		078AB0111CDEF0F3007323A2 /* BNRHyponsisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB0101CDEF0F3007323A2 /* BNRHyponsisView.m */; };
 		078AB0141CDEF12D007323A2 /* BNRHyponsisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB0131CDEF12D007323A2 /* BNRHyponsisViewController.m */; };
+		078AB0171CDF9BD8007323A2 /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB0161CDF9BD8007323A2 /* BNRReminderViewController.m */; };
+		078AB0191CDF9CB1007323A2 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078AB0181CDF9CB1007323A2 /* BNRReminderViewController.xib */; };
+		078AB01D1CE02531007323A2 /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB01B1CE02531007323A2 /* BNRQuizViewController.m */; };
+		078AB01E1CE02531007323A2 /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078AB01C1CE02531007323A2 /* BNRQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		078AB0101CDEF0F3007323A2 /* BNRHyponsisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHyponsisView.m; sourceTree = "<group>"; };
 		078AB0121CDEF12D007323A2 /* BNRHyponsisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHyponsisViewController.h; sourceTree = "<group>"; };
 		078AB0131CDEF12D007323A2 /* BNRHyponsisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHyponsisViewController.m; sourceTree = "<group>"; };
+		078AB0151CDF9BD8007323A2 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
+		078AB0161CDF9BD8007323A2 /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
+		078AB0181CDF9CB1007323A2 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		078AB01A1CE02531007323A2 /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		078AB01B1CE02531007323A2 /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		078AB01C1CE02531007323A2 /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,12 @@
 				078AB0131CDEF12D007323A2 /* BNRHyponsisViewController.m */,
 				078AAFFB1CDEF0C0007323A2 /* AppDelegate.h */,
 				078AAFFC1CDEF0C0007323A2 /* AppDelegate.m */,
+				078AB0151CDF9BD8007323A2 /* BNRReminderViewController.h */,
+				078AB0161CDF9BD8007323A2 /* BNRReminderViewController.m */,
+				078AB0181CDF9CB1007323A2 /* BNRReminderViewController.xib */,
+				078AB01A1CE02531007323A2 /* BNRQuizViewController.h */,
+				078AB01B1CE02531007323A2 /* BNRQuizViewController.m */,
+				078AB01C1CE02531007323A2 /* BNRQuizViewController.xib */,
 				078AAFFE1CDEF0C0007323A2 /* ViewController.h */,
 				078AAFFF1CDEF0C0007323A2 /* ViewController.m */,
 				078AB00F1CDEF0F3007323A2 /* BNRHyponsisView.h */,
@@ -147,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				078AB0081CDEF0C0007323A2 /* LaunchScreen.storyboard in Resources */,
+				078AB0191CDF9CB1007323A2 /* BNRReminderViewController.xib in Resources */,
 				078AB0051CDEF0C0007323A2 /* Assets.xcassets in Resources */,
 				078AB0031CDEF0C0007323A2 /* Main.storyboard in Resources */,
+				078AB01E1CE02531007323A2 /* BNRQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				078AB0001CDEF0C0007323A2 /* ViewController.m in Sources */,
+				078AB01D1CE02531007323A2 /* BNRQuizViewController.m in Sources */,
+				078AB0171CDF9BD8007323A2 /* BNRReminderViewController.m in Sources */,
 				078AB0141CDEF12D007323A2 /* BNRHyponsisViewController.m in Sources */,
 				078AAFFD1CDEF0C0007323A2 /* AppDelegate.m in Sources */,
 				078AB0111CDEF0F3007323A2 /* BNRHyponsisView.m in Sources */,

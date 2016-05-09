@@ -20,11 +20,45 @@
     BNRHyponsisView *backgroundView = [[BNRHyponsisView alloc] init];
     
     self.view = backgroundView;
+    
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    UISegmentedControl *colorControls = [[UISegmentedControl alloc] initWithItems:@[@"Red",@"Green",@"Blue"]];
+    [colorControls addTarget:self action:@selector(changeHyponsisViewColor:) forControlEvents:UIControlEventValueChanged];
+    [colorControls setFrame:CGRectMake(frame.origin.x+frame.size.width/4, frame.origin.y + 30, frame.origin.x+frame.size.width/2, 20)];
+    [self.view addSubview:colorControls];
+}
+
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.title = @"Hypnotize";
+        
+        UIImage *i = [UIImage imageNamed:@"Hypno.png"];
+        self.tabBarItem.image = i;
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"BNRHypnosisViewController loaded its view");
+}
+
+- (void)changeHyponsisViewColor: (id)sender
+{
+    BNRHyponsisView *hv = (BNRHyponsisView *)self.view;
+    switch ([sender selectedSegmentIndex]) {
+        case 0:
+            hv.circleColor = [UIColor redColor];
+            break;
+        case 1:
+            hv.circleColor = [UIColor greenColor];
+        case 2:
+            hv.circleColor = [UIColor blueColor];
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
