@@ -17,15 +17,31 @@
 
 -(void)loadView
 {
+    CGRect frame = [[UIScreen mainScreen] bounds];
     BNRHyponsisView *backgroundView = [[BNRHyponsisView alloc] init];
     
-    self.view = backgroundView;
-    
-    CGRect frame = [[UIScreen mainScreen] bounds];
     UISegmentedControl *colorControls = [[UISegmentedControl alloc] initWithItems:@[@"Red",@"Green",@"Blue"]];
     [colorControls addTarget:self action:@selector(changeHyponsisViewColor:) forControlEvents:UIControlEventValueChanged];
     [colorControls setFrame:CGRectMake(frame.origin.x+frame.size.width/4, frame.origin.y + 30, frame.origin.x+frame.size.width/2, 20)];
-    [self.view addSubview:colorControls];
+    [backgroundView addSubview:colorControls];
+    
+    CGRect textFieldRect = CGRectMake(40, 70, 230, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    [backgroundView addSubview:textField];
+    textField.placeholder = @"Hypno me!";
+    textField.returnKeyType = UIReturnKeyDone;
+//    textField.clearButtonMode = YES;
+
+    textField.delegate = self;
+    self.view = backgroundView;
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"%@", textField.text);
+    return YES;
 }
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
