@@ -13,7 +13,9 @@
 		07027B951CC576590008B5FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07027B931CC576590008B5FD /* Main.storyboard */; };
 		07027B971CC576590008B5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07027B961CC576590008B5FD /* Assets.xcassets */; };
 		07027B9A1CC576590008B5FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07027B981CC576590008B5FD /* LaunchScreen.storyboard */; };
-		07027BA31CC576900008B5FD /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07027BA21CC576900008B5FD /* ItemViewController.m */; };
+		07027BA31CC576900008B5FD /* BNRItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07027BA21CC576900008B5FD /* BNRItemViewController.m */; };
+		078AB0211CE43D58007323A2 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB0201CE43D58007323A2 /* BNRItem.m */; };
+		078AB0241CE43EE8007323A2 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AB0231CE43EE8007323A2 /* BNRItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +29,12 @@
 		07027B961CC576590008B5FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07027B991CC576590008B5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07027B9B1CC576590008B5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07027BA11CC576900008B5FD /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemViewController.h; path = ../ItemViewController.h; sourceTree = "<group>"; };
-		07027BA21CC576900008B5FD /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemViewController.m; path = ../ItemViewController.m; sourceTree = "<group>"; };
+		07027BA11CC576900008B5FD /* BNRItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItemViewController.h; path = ../BNRItemViewController.h; sourceTree = "<group>"; };
+		07027BA21CC576900008B5FD /* BNRItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemViewController.m; path = ../BNRItemViewController.m; sourceTree = "<group>"; };
+		078AB01F1CE43D58007323A2 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		078AB0201CE43D58007323A2 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		078AB0221CE43EE8007323A2 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
+		078AB0231CE43EE8007323A2 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 		07027B891CC576590008B5FD /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
-				07027BA11CC576900008B5FD /* ItemViewController.h */,
-				07027BA21CC576900008B5FD /* ItemViewController.m */,
+				07027BA11CC576900008B5FD /* BNRItemViewController.h */,
+				07027BA21CC576900008B5FD /* BNRItemViewController.m */,
+				078AB01F1CE43D58007323A2 /* BNRItem.h */,
+				078AB0201CE43D58007323A2 /* BNRItem.m */,
+				078AB0221CE43EE8007323A2 /* BNRItemStore.h */,
+				078AB0231CE43EE8007323A2 /* BNRItemStore.m */,
 				07027B8D1CC576590008B5FD /* AppDelegate.h */,
 				07027B8E1CC576590008B5FD /* AppDelegate.m */,
 				07027B901CC576590008B5FD /* ViewController.h */,
@@ -155,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07027B921CC576590008B5FD /* ViewController.m in Sources */,
-				07027BA31CC576900008B5FD /* ItemViewController.m in Sources */,
+				07027BA31CC576900008B5FD /* BNRItemViewController.m in Sources */,
+				078AB0211CE43D58007323A2 /* BNRItem.m in Sources */,
 				07027B8F1CC576590008B5FD /* AppDelegate.m in Sources */,
 				07027B8C1CC576590008B5FD /* main.m in Sources */,
+				078AB0241CE43EE8007323A2 /* BNRItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +316,7 @@
 				07027BA01CC576590008B5FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

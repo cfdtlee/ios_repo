@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ItemViewController.h"
+#import "BNRItemViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,13 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ItemViewController *itemViewController = [[ItemViewController alloc] init];
+    BNRItemViewController *itemViewController = [[BNRItemViewController alloc] init];
     self.window.rootViewController = itemViewController;
     
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
-    UIView *firstView = [[UIView alloc] initWithFrame:firstFrame];
-    firstView.backgroundColor = [UIColor redColor];
-    [self.window addSubview:firstView];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
